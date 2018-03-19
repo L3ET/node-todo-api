@@ -4,7 +4,7 @@ const {MongoClient, ObjectID} = require('mongodb');
 var obj = new ObjectID();
  
 
-MongoClient.connect('mongodb://localhost:27017/',(err, client)=>{
+MongoClient.connect('mongodb://leet:leet123@ds113019.mlab.com:13019/todoapp',(err, client)=>{
     if(err){
         return console.log("Unable to connect MongoDB server");
     }
